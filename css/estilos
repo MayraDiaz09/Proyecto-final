@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagen-principal {
+  display: block;
+  margin: 40px auto;
+  max-width: 90%;
+  height: auto;
+}
+.galeria {
+  padding: 30px;
+  text-align: center;
+  display: block;
+  margin: 40px auto;
+  max-width: 90%;
+  height: auto;
+ 
+}
+
+.imagen-principal {
+  width: 80%; 
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+header {
+  background-image: url("../imagenes/patita gatito.jpg");
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 400px;               
+  width: 100%;
+  position: relative;
+}
+header .botones {
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  padding: 10px 20px; 
+  box-sizing: border-box;
+}
+header img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+}
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav {
+  display: inline-block;
+  width: 80%;
+}
+nav img {
+
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h1 {
+  font-size: 2.5em;
+  color: #8e44ad;
+  margin-bottom: 10px;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  color: #6c3483;
+  margin-bottom: 20px;
+}
+
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/*
+li {
+  color: black;
+  margin: 10px;
+}
+*/
+
+
+ul {
+  list-style-type: unset;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  width: 80%;
+  height: 100%;
+}
+
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 5px;
+  background-color: #b81ecd;
+  min-width: 200px;  
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+
+.boton:hover {
+  background-color: #f891f1;
+}
+figure {
+  display: inline-block;
+  margin: 0 px;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+
+}
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content:center; 
+  align-items: start;      
+  row-gap: 20px;        
+  column-gap: 10%; 
+}
+
+.grid img {
+  contain-intrinsic-block-size: auto 100px;
+  border: 15px solid #b6a4c6;
+  width: 90%;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.grid img:hover {
+  opacity: 1;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+   padding: 1rem 0;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+footer {
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+  padding: 15px;
+  background-color: #dcdcdc;
+  text-align: center;
+  font-size: 0.9em;
+  border-radius: 0px;
+}
+.grid figure:nth-child(odd) img {
+  border-radius: 30px;
+}
+
+.grid figure:nth-child(even) img {
+  border-radius: 60px;
+}
